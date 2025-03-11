@@ -2,15 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OnPlatform.MainPage"
+             Padding="{OnPlatform iOS='0,30,0,30', Android='15,25,15,25',WinUI='15,25,15,25'}"
              >
 
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout >
             <Label Text="Witoj"
                FontSize="{OnPlatform iOS='28', Android='24',WinUI='100'}"/>
             <Button
                 Text="Tak"
                 BackgroundColor="{OnPlatform iOS='Green', Android='Blue', WinUI='Red'}"/>
+            <BoxView
+                HeightRequest="{OnPlatform iOS='100', Android='75',WinUI='75'}"
+                WidthRequest="{OnPlatform iOS='200', Android='150',WinUI='150'}"/>
         </VerticalStackLayout>
     </ScrollView>
 
